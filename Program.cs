@@ -7,12 +7,11 @@ namespace DinningPhilosophers
     {
         static void Main(string[] args)
         {
-            // NEW SHITE
-            Philosopher philosopher1 = new Philosopher(Table.fork5, Table.fork1, "Philosopher11", 4);
-            Philosopher philosopher2 = new Philosopher(Table.fork1, Table.fork2, "Philosopher22", 5);
-            Philosopher philosopher3 = new Philosopher(Table.fork2, Table.fork3, "Philosopher33", 6);
-            Philosopher philosopher4 = new Philosopher(Table.fork3, Table.fork4, "Philosopher44", 4);
-            Philosopher philosopher5 = new Philosopher(Table.fork4, Table.fork5, "Philosopher55", 7);
+            Philosopher philosopher1 = new Philosopher(Table.fork5, Table.fork1, "Philosopher1", 4);
+            Philosopher philosopher2 = new Philosopher(Table.fork1, Table.fork2, "Philosopher2", 5);
+            Philosopher philosopher3 = new Philosopher(Table.fork2, Table.fork3, "Philosopher3", 6);
+            Philosopher philosopher4 = new Philosopher(Table.fork3, Table.fork4, "Philosopher4", 4);
+            Philosopher philosopher5 = new Philosopher(Table.fork4, Table.fork5, "Philosopher5", 7);
 
             new Thread(philosopher1.Think).Start();
             new Thread(philosopher2.Think).Start();
